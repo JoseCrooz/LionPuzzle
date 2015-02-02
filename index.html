@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Slider Puzzle</title>
+
+<link rel="stylesheet" type="text/css" href="css/puzzle.css" />
+<script src="js/Puzzle.js"></script>
+<script src="js/Tween.js"></script>
+<script src="js/Tile.js"></script>
+<script src="js/Board.js"></script>
+<script src="js/Worker.js"></script>
+<script src="js/util/MouseUtil.js"></script>
+<script src="js/util/Utils.js"></script>
+
+</head>
+
+<body>                  
+<div id="marquee"><p class="marquee">YOU WON!</p></div>
+<div id="startScreen"></div>
+<div id="easyBtn" class="btn" onClick="initGame(2)">EASY</div>
+<div id="normalBtn" class="btn" onClick="initGame(20)">NORMAL</div>
+<div id="hardBtn" class="btn" onClick="initGame(100)">HARD</div>
+<div id="tile0" onMouseDown="handleMouseDown(event,this)"><div class="tileContent"></div></div>
+<div id="tile1" onMouseDown="handleMouseDown(event,this)"><div class="tileContent"></div></div>
+<div id="tile2" onMouseDown="handleMouseDown(event,this)"><div class="tileContent"></div></div>
+<div id="tile3" onMouseDown="handleMouseDown(event,this)"><div class="tileContent"></div></div>
+<div id="tile4" onMouseDown="handleMouseDown(event,this)"><div class="tileContent"></div></div>
+<div id="tile5" onMouseDown="handleMouseDown(event,this)"><div class="tileContent"></div></div>
+<div id="tile6" onMouseDown="handleMouseDown(event,this)"><div class="tileContent"></div></div>
+<div id="tile7" onMouseDown="handleMouseDown(event,this)"><div class="tileContent"></div></div>
+<div id="tile8" onMouseDown="handleMouseDown(event,this)"><div class="tileContent"></div></div>
+<div id="tile9" onMouseDown="handleMouseDown(event,this)"><div class="tileContent"></div></div>
+<div id="tile10" onMouseDown="handleMouseDown(event,this)"><div class="tileContent"></div></div>
+<div id="tile11" onMouseDown="handleMouseDown(event,this)"><div class="tileContent"></div></div>
+<div id="tile12" onMouseDown="handleMouseDown(event,this)"><div class="tileContent"></div></div>
+<div id="tile13" onMouseDown="handleMouseDown(event,this)"><div class="tileContent"></div></div>
+<div id="tile14" onMouseDown="handleMouseDown(event,this)"><div class="tileContent"></div></div>
+<div id="tile15"><div class="blank"></div></div>
+<div id="footer"><div id="solveBtn" class="btn" onClick="board.handleSolveRequest()">SOLVE IT</div></div>
+</body>
+</html>
